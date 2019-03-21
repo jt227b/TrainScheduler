@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Firebase Reference -->
-    <script src="#"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- LINK TO FIREBASE CDN GOES HERE -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
 
     <!-- Moment.js Reference -->
     <script src="#"></script>
@@ -21,7 +26,7 @@
     <style>
         #employee-table th,
         td {
-            
+
             width: 16.575%;
         }
     </style>
@@ -75,22 +80,23 @@
                         <!-- Entry Form -->
                         <form>
                             <div class="form-group">
-                                <label for="employee-name-input">Train Name</label>
-                                <input class="form-control" id="employee-name-input" placeholder="Jane Doe" type="text">
+                                <label for="train-name-input">Train Name</label>
+                                <input class="form-control" id="train-name-input" placeholder="Thomas The Train"
+                                    type="text">
                             </div>
                             <div class="form-group">
                                 <label for="role-input">Destination</label>
-                                <input class="form-control" id="role-input" placeholder="CEO" type="text">
+                                <input class="form-control" id="role-input" placeholder="New York, NY" type="text">
                             </div>
                             <div class="form-group">
                                 <label for="start-input">First Train Time (HH:mm - military time)</label>
-                                <input class="form-control" id="start-input" placeholder="01/08/1989" type="text">
+                                <input class="form-control" id="start-input" placeholder="#" type="text">
                             </div>
                             <div class="form-group">
                                 <label for="rate-input">Frequency (min)</label>
                                 <input class="form-control" id="rate-input" placeholder="200000" type="text">
                             </div>
-                            <button class="btn btn-primary float-left" id="add-employee-btn">Submit</button>
+                            <button class="btn btn-primary float-left" id="add-trainTimer-btn">Submit</button>
                         </form>
 
                     </div>

@@ -1,0 +1,15 @@
+body{
+    background-image: url(../image/2019-03-20.png);
+}
+
+.jumbotron{
+    background-image: url(../image/downtownDallas.jpg);
+    color: orange;
+    font-size: 30px;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}

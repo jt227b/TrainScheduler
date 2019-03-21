@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Employee Tracker</title>
+    <title>Train Scheduler</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -34,22 +34,24 @@
 
 <body>
 
-    <!-- Employee Tracker -->
+    <!-- Train Scheduler -->
     <div class="container">
 
         <!-- Jumbotron -->
         <div class="jumbotron">
-            <h1 class="text-center">Train Departures</h1>
-            <h3 class="text-center">All Abooooooooard!</h3>
+            <h1 class="text-center"><strong>Train Departures</strong></h1>
+            <h3 class="text-center"><strong>DART. let's go!</strong></h3>
         </div>
 
         <div class="row">
 
             <div class="col-md-12">
 
-                <!-- Current Employees-->
+                <!-- Train Schedule List -->
                 <div class="card mb-4">
-                    <div class="card-header">Current Train Schedule</div>
+                    <div class="card-header">
+                        <h3><strong>Train Schedule</strong></h3>
+                    </div>
                     <div class="card-body">
                         <table class="table table-sm table-hover" id='employee-table'>
                             <thead>
@@ -72,31 +74,35 @@
 
         <div class="row">
             <div class="col-md-12">
-                <!-- Add Employee  -->
+
+                <!-- Add Train Div  -->
                 <div class="card mb-4">
-                    <div class="card-header">Add Train</div>
+                    <div class="card-header">
+                        <h3><strong>Add Train</strong></h3>
+                    </div>
                     <div class="card-body">
 
                         <!-- Entry Form -->
                         <form>
                             <div class="form-group">
-                                <label for="train-name-input">Train Name</label>
-                                <input class="form-control" id="train-name-input" placeholder="Thomas The Train"
-                                    type="text">
+                                <label for="name"><strong> Train Name</strong></label>
+                                <input class="form-control" id="name" placeholder="Dallas Station" type="text">
                             </div>
                             <div class="form-group">
-                                <label for="role-input">Destination</label>
-                                <input class="form-control" id="role-input" placeholder="New York, NY" type="text">
+                                <label for="destination"><strong>Destination</strong></label>
+                                <input class="form-control" id="destination" placeholder="Plano, TX" type="text">
                             </div>
                             <div class="form-group">
-                                <label for="start-input">First Train Time (HH:mm - military time)</label>
-                                <input class="form-control" id="start-input" placeholder="#" type="text">
+                                <label for="first-time"><strong>First Train Time (HH:mm - military
+                                        time)</strong></label>
+                                <input class="form-control" id="first-time" placeholder="12:30" type="text">
                             </div>
                             <div class="form-group">
-                                <label for="rate-input">Frequency (min)</label>
-                                <input class="form-control" id="rate-input" placeholder="200000" type="text">
+                                <label for="frequency"><strong>Frequency (min)</strong></label>
+                                <input class="form-control" id="frequency" placeholder="15" type="text">
                             </div>
-                            <button class="btn btn-primary float-left" id="add-trainTimer-btn">Submit</button>
+                            <button class="btn btn-warning float-left"
+                                id="add-trainTimer-btn"><strong>Submit</strong></button>
                         </form>
 
                     </div>

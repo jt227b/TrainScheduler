@@ -3,13 +3,19 @@ body{
 }
 
 .jumbotron{
-    background-image: url(../image/downtownDallas.jpg);
-    color: orange;
+    background-image: url(../image/sketchDart.jpg);
+    color: #ffc107;
+    text-shadow: 3px 2px black;
     font-size: 30px;
+   
 }
 
 h1{
     font-size: 4rem;
     font-family: Arial, Helvetica, sans-serif;
     
+}
+
+.card-header{
+    background-color: #ffc107;
 }

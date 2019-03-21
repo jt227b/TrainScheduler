@@ -7,6 +7,7 @@ body{
     color: #ffc107;
     text-shadow: 3px 2px black;
     font-size: 30px;
+    border: solid 3px black;
    
 }
 
@@ -18,4 +19,8 @@ h1{
 
 .card-header{
     background-color: #ffc107;
+}
+
+.mb-4{
+    border: solid 2px black;
 }
